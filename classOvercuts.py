@@ -5,7 +5,6 @@ import xlsxwriter
 import os
 import regex
 
-
 class Overcuts:
     def __int__(self):
         # Locations of the Required Files
@@ -123,8 +122,8 @@ class Overcuts:
 
 
 # User Inputs (Start and End) to start Overcut Script
-starting_distance = 100 #int(input('Enter Starting Distance for Overcut: '))
-stop_distance = 300 #int(input('Enter End Distance for Overcut: '))
+starting_distance = int(input('Enter Starting Distance for Overcut: '))
+stop_distance = int(input('Enter End Distance for Overcut: '))
 
 # Starting Overcut
 overcut_start = Overcuts()
