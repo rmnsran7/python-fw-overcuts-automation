@@ -72,7 +72,7 @@ class Overcuts:
             return x, y
         except Exception as e:  # if image not found
             print(f"""Error : {type(e).__name__}
-            Location: Locating Image""")
+            Location: Locating Image {image_location}""")
             exit()
 
     # This function locates the image of distance field using locate_image function
@@ -123,8 +123,8 @@ class Overcuts:
 
 
 # User Inputs (Start and End) to start Overcut Script
-starting_distance = int(input('Enter Starting Distance for Overcut: '))
-stop_distance = int(input('Enter End Distance for Overcut: '))
+starting_distance = 100 #int(input('Enter Starting Distance for Overcut: '))
+stop_distance = 300 #int(input('Enter End Distance for Overcut: '))
 
 # Starting Overcut
 overcut_start = Overcuts()
